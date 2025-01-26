@@ -1,20 +1,62 @@
 # Assignment_BTech2026_-2201921540071-
 # Problem 1: Using inheritance, one class can acquire the properties of others. Consider the following Animal class:
 # Platform Used : HackerRank
-class Animal{ void walk(){ System.out.println("I am walking"); } } This class has only one method, walk. Next, we want to create a Bird class that also has a fly method. We do this using extends keyword:
 
-class Bird extends Animal { void fly() { System.out.println("I am flying"); } } Finally, we can create a Bird object that can both fly and walk.
+In C++, we can achieve similar functionality by using inheritance. We start with an "Animal" class that has only one method, "walk":
 
-public class Solution{ public static void main(String[] args){
+class Animal{
+public:
+    void walk(){
+        cout <<"I am walking"<<endl;
+    }
+};
 
- Bird bird = new Bird();
- bird.walk();
- bird.fly();
-  
-} } The above code will print:
+Next, we create a "Bird" class that inherits from the "Animal" class and adds a "fly" method. This is done using the "public" inheritance specifier:
 
-I am walking I am flying This means that a Bird object has all the properties that an Animal object has, as well as some additional unique properties.
+class Bird : public Animal{
+public:
+    void fly(){
+        cout <<"I am flying"<<endl;
+    }
+};
 
-The code above is provided for you in your editor. You must add a sing method to the Bird class, then modify the main method accordingly so that the code prints the following lines:
+Now, a "Bird" object can both "walk" and "fly", since it inherits all the properties and behaviors of the "Animal" class.
 
-I am walking I am flying I am singing
+Finally, we add a "sing" method to the "Bird" class and modify the "main" function to demonstrate the functionality:
+
+#include<iostream>
+using namespace std;
+
+class Animal{
+public:
+    void walk(){
+        cout<<"I am walking"<<endl;
+    }
+};
+
+class Bird:public Animal{
+public:
+    void fly(){
+        cout<<"I am flying"<<endl;
+    }
+    void sing(){
+        cout <<"I am singing"<<endl;
+    }
+};
+
+int main(){
+    Bird bird;
+    bird.walk();
+    bird.fly();
+    bird.sing();
+    return 0;
+}
+
+
+The output of this C++ code will be:
+
+I am walking
+I am flying
+I am singing
+
+This demonstrates that the "Bird" class has all the properties of the "Animal" class and also has its unique methods.
