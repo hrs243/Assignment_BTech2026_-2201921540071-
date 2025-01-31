@@ -104,3 +104,15 @@ SOLUTION- 1-MADE A BASE CLASS NAMED ARITHMETIC.
 3-INHERITED THE BASED CLASS AND NAMED IT ADDER 
 4-CREATED CHILD CLASS OBJECT IN MAIN FUNCTION AND CALLED BASE CLASS METHOD USING INHERITANCE 
 5-OUTPUT WAS SCUCCESFULLY GENERATED
+
+
+
+PROBLEM 4-Write a C++ program to create a class called Triangle that has private member variables for the lengths of its three sides. Implement member functions to determine if the triangle is equilateral, isosceles, or scalene.
+
+SOLUTION- 1-The program defines a Triangle class to determine the type of a triangle based on its three side lengths.
+
+2- It uses a constructor to initialize the side lengths of the triangle.
+
+3- The triangletype() method returns one of the three types of triangles: Equilateral Triangle (all three sides are equal) Isosceles Triangle (two sides are equal) Scalene Triangle (all sides are different)
+
+4- The main() function creates a Triangle object with predefined values and prints the triangle type.
