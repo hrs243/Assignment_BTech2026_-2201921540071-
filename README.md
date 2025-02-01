@@ -116,3 +116,26 @@ SOLUTION- 1-The program defines a Triangle class to determine the type of a tria
 3- The triangletype() method returns one of the three types of triangles: Equilateral Triangle (all three sides are equal) Isosceles Triangle (two sides are equal) Scalene Triangle (all sides are different)
 
 4- The main() function creates a Triangle object with predefined values and prints the triangle type.
+
+
+
+PROBLEM-
+Write a C++ program to implement a class called Date that has private member variables for day, month, and year. Include member functions to set and get these variables, as well as to validate if the date is valid.
+
+SOLUTION-
+This C++ program defines a Date class to handle date-related operations.
+
+It includes member functions to set, retrieve, and validate a date.
+
+The isValidDate() function checks if a given date is valid, considering leap years and month-day constraints.
+
+The main() function takes user input for day, month, and year, then validates and displays the date.
+
+If the date is valid, a confirmation message is displayed; otherwise, an invalid date message is shown.
+
+
+
+
+
+
+
