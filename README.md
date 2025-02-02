@@ -135,7 +135,21 @@ If the date is valid, a confirmation message is displayed; otherwise, an invalid
 
 
 
+// Problem 10.
+//  Write a C++ program to implement a class called Shape with virtual member functions for calculating area and perimeter. Derive classes such as Circle, Rectangle, and Triangle from the Shape class and override virtual functions accordingly.
 
+
+Solution-
+
+1-Implements an abstract base class Shape with pure virtual functions (area() and perimeter()).
+
+2-Uses constructors to accept shape dimensions dynamically.
+
+3-Circle, Rectangle, and Triangle classes override area() and perimeter() functions.
+
+4-Heron's formula is used for triangle area calculation.
+
+5-Demonstrates polymorphism by enforcing method implementation in derived classes.
 
 
 
