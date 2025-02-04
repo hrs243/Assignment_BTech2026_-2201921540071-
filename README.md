@@ -151,5 +151,21 @@ Solution-
 
 5-Demonstrates polymorphism by enforcing method implementation in derived classes.
 
+PROBLEM 9- Eligibility Checker for Students You are tasked with designing a simple program that determines the eligibility of students based on their scores and ages.
 
+Class Definitions:
+
+Student class: Attributes: name (String): The name of the student. score (int): The student's academic score. age (int): The age of the student. Methods: eligible(): A method that checks the student's eligibility and prints "YES" if the score is greater than 10 and the age is greater than 20. Otherwise, it prints "NO."
+
+SOLUTION-
+
+1-Student Class Implementation - Defines a Student class with attributes: name, score, and age.
+
+2-Eligibility Check - The eligible() method checks if a student qualifies based on a score greater than 10 and age above 20.
+
+3-Object Creation & Initialization - Creates a Student object in main(), assigning values to name, score, and age.
+
+4-Output Behavior - Prints "YES" if the student meets the criteria, otherwise prints "NO".
+
+5-Simple OOP Concept - Demonstrates basic class, object, and method usage in C++.
 
