@@ -169,3 +169,18 @@ SOLUTION-
 
 5-Simple OOP Concept - Demonstrates basic class, object, and method usage in C++.
 
+
+Problem 10-
+
+Player BMI Calculation Write a Player class containing height and weight as attributes. Also this class contains a BMI method which returns an integer BMI of this person.
+
+Solution-
+
+1-Player Class: Defines a class Player with private attributes height and weight.
+
+2-Constructor: Initializes height and weight using the constructor.
+
+3-BMI Calculation: Method calculateBMI() computes BMI using weight / (height * height).
+
+4-Object Creation: An instance of Player is created with height 5 and weight 54.
+
