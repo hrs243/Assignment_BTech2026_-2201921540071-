@@ -184,3 +184,25 @@ Solution-
 
 4-Object Creation: An instance of Player is created with height 5 and weight 54.
 
+
+Problem 11- 
+
+The Car class has two constructors: one to set the car's name and another called the copy constructor.
+The copy constructor is called when we create a new car object (copiedCar) and initialize it using an existing car object (originalCar).
+The copy constructor copies the car's name from the existing car to the new car, creating a new car that's a copy of the original one.
+In the main() function, we create an originalCar, display its name, and then create a copiedCar using the copy constructor and display its name.
+
+
+Solution-
+
+ 1-Car class has a parameterized constructor and a copy constructor to initialize and copy name and color.
+
+2️- Newcar inherits from Car but must explicitly call Car's constructor for proper initialization.
+
+3️- Newcar's parameterized constructor calls Car(name, color), ensuring base class attributes are set correctly.
+
+4️- Newcar's copy constructor calls Car(obj), ensuring proper copying of inherited attributes.
+
+5️- Demonstrates correct object copying in inheritance, preventing shallow copy issues.
+
+
