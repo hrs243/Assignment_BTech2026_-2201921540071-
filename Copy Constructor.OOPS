@@ -1,0 +1,52 @@
+// The Car class has two constructors: one to set the car's name and another called the copy constructor.
+// The copy constructor is called when we create a new car object (copiedCar) and initialize it using an existing car object (originalCar).
+// The copy constructor copies the car's name from the existing car to the new car, creating a new car that's a copy of the original one.
+// In the main() function, we create an originalCar, display its name, and then create a copiedCar using the copy constructor and display its name.
+#include<bits/stdc++.h>
+using namespace std;
+
+class Car{
+    public:
+    string name;
+    string color;
+
+    Car(string name,string color){
+        this->name=name;
+        this->color=color;
+    }
+
+    //Copy Constructor
+    Car(const Car &obj){
+      this->name=obj.name;
+      this->color=obj.color;
+    }
+
+    void display(){
+        cout<<"Name: "<<name<<endl;
+        cout<<"Color: "<<color<<endl;
+    }
+};
+
+class Newcar:public Car{
+    public:
+       // Constructor that correctly initializes Car
+    Newcar(string name, string color) : Car(name, color) {}
+
+    // Copy Constructor for Newcar
+    Newcar(const Newcar &obj) : Car(obj) {}   
+};
+
+
+int main(){
+
+    Car originalCar("Toyota", "Red");
+    originalCar.display();
+
+
+    Newcar obj("BMW","Black");
+    Newcar newcar= obj;
+
+    newcar.display();
+
+    return 0;
+}
