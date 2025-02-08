@@ -227,3 +227,27 @@ SOLUTION-
 4- Static Method: showTotalBalance() displays the total balance and is accessible without creating an object.
 
 5- Usage: Simply create BankAccount objects with initial balances, and call BankAccount::showTotalBalance() to check the total balance.
+
+
+Problem 13- Circle Area Calculation
+
+You are given a class Circle having radius as attributes, constructors and a getArea function which return the area of the circle.
+Task
+Create two circles c1 and c2. c1 is created using the default constructor, which initializes its radius to 1.0. c2 is created using the constructor with one parameter, which initializes its radius to 5.0. The getArea() function is used to calculate the area of each circle.
+
+Output Format
+Print the area of c1 at first line.
+Print the area of c2 at second line.
+
+
+Solution-
+
+Class Definition: The Circle class is defined with a private member radius and public constructors and methods.
+
+Constructors: The class has a default constructor that initializes radius to 1.0 and a parameterized constructor that sets radius to a given value.
+
+getArea Method: This method calculates and returns the area of the circle using the formula π × radius² (approximating π as 3.14).
+
+Object Creation: Two objects, c1 (default radius 1.0) and c2 (radius 5.0), are created.
+
+Output Calculation: The areas of both circles are computed and printed, resulting in 3.14 for c1 and 78.5 for c2.
