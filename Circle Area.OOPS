@@ -1,0 +1,36 @@
+// Circle Area Calculation
+// You are given a class Circle having radius as attributes, constructors and a getArea function which return the area of the circle.
+
+// Task
+// Create two circles c1 and c2. c1 is created using the default constructor, which initializes its radius to 1.0. c2 is created using the constructor with one parameter, which initializes its radius to 5.0. The getArea() function is used to calculate the area of each circle.
+
+// Debug the code to ensure everything works fine.
+
+// Output Format
+// Print the area of c1 at first line.
+// Print the area of c2 at second line.
+
+#include<bits/stdc++.h>
+using namespace std;
+
+class Circle{
+    float radius;
+    public:
+    Circle(){
+        this->radius=1.0;
+    }
+    Circle(float r){
+        this->radius=r;
+    }
+    float getArea(){
+        return 3.14*radius*radius;
+    }
+};
+
+int main(){ 
+    Circle c1;
+    Circle c2(5.0);
+    cout<<c1.getArea()<<endl;
+    cout<<c2.getArea()<<endl;
+    return 0;
+}
