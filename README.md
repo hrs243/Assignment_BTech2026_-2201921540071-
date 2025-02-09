@@ -251,3 +251,34 @@ getArea Method: This method calculates and returns the area of the circle using 
 Object Creation: Two objects, c1 (default radius 1.0) and c2 (radius 5.0), are created.
 
 Output Calculation: The areas of both circles are computed and printed, resulting in 3.14 for c1 and 78.5 for c2.
+
+Problem 14-
+Question:
+You are developing a payment processing system that supports multiple payment methods like Credit Card and UPI. The system should ensure that all payment methods follow a common interface but have different processing implementations.
+
+Requirements:
+Create an abstract class Payment with the following:
+
+A pure virtual function processPayment(double amount)
+A function displayTransaction(double amount, string method) that prints the payment details
+Create two derived classes, CreditCardPayment and UPIPayment, that inherit from Payment:
+
+CreditCardPayment deducts 2% transaction fees
+UPIPayment has no transaction fees
+Demonstrate functionality:
+
+Create objects of both classes
+Process payments and display transactions
+
+
+Solution-
+
+1-The program defines an abstract class Payment with a pure virtual function processPayment() for enforcing a common payment structure.
+
+2-Two derived classes, CreditCardPayment (which deducts a 2% fee) and UPIPayment (which processes payments without fees), implement this function.
+
+3-The displayTransaction() method in Payment provides a standard way to display transaction details.
+
+4-The main() function creates objects of both derived classes and processes payments dynamically.
+
+5-The program demonstrates abstraction and polymorphism, ensuring different payment methods follow a unified structure. 
