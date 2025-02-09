@@ -1,0 +1,53 @@
+// Question:
+// You are developing a payment processing system that supports multiple payment methods like Credit Card and UPI. The system should ensure that all payment methods follow a common interface but have different processing implementations.
+
+// Requirements:
+// Create an abstract class Payment with the following:
+
+// A pure virtual function processPayment(double amount)
+// A function displayTransaction(double amount, string method) that prints the payment details
+// Create two derived classes, CreditCardPayment and UPIPayment, that inherit from Payment:
+
+// CreditCardPayment deducts 2% transaction fees
+// UPIPayment has no transaction fees
+// Demonstrate functionality:
+
+// Create objects of both classes
+// Process payments and display transactions
+#include <iostream>
+using namespace std;
+
+class Payment {
+public:
+    virtual void processPayment(double amount) = 0;
+    virtual void displayTransaction(double amount, string method) {
+        cout << "Transaction amount: $" << amount << endl;
+        cout << "Payment method: " << method << endl;
+    }
+};
+
+class CreditCardPayment : public Payment {
+public:
+    void processPayment(double amount) {
+        double fee = amount * 0.02;
+        double totalAmount = amount + fee;
+        displayTransaction(totalAmount, "Credit Card");
+    }
+};
+
+class UPIPayment : public Payment {
+public:
+    void processPayment(double amount) {
+        displayTransaction(amount, "UPI");
+    }
+};
+
+int main() {
+    CreditCardPayment ccPayment;
+    UPIPayment upiPayment;
+
+    ccPayment.processPayment(100.0);
+    upiPayment.processPayment(50.0);
+
+    return 0;
+}
